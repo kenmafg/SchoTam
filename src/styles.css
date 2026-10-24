@@ -1,4 +1,3 @@
-/* Базова підготовка (Завдання 1) */
 * {
     box-sizing: border-box;
 }
@@ -9,15 +8,14 @@ body {
     background-color: #f8f9fa;
     color: #333;
 }
-
-/* Спільний контейнер */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Шапка */
+
+
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
@@ -28,6 +26,8 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 
 .menu {
     margin-left: 30px;
@@ -41,7 +41,7 @@ body {
     }
 
 .actions {
-    margin-left: auto; /* Відсуваємо вправо */
+    margin-left: auto; 
     display: flex;
     align-items: center;
     gap: 20px;
@@ -61,7 +61,9 @@ body {
     font-weight: bold;
 }
 
-/* Головний екран (Hero) */
+
+
+
 .hero {
     padding: 40px 0;
 }
@@ -73,13 +75,13 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden; /* Ховаємо зайве від картинки */
+    overflow: hidden;
     min-height: 400px;
 }
 
 .hero-text {
     position: relative;
-    z-index: 2; /* Текст над картинкою */
+    z-index: 2; 
     max-width: 50%;
     color: #ffffff;
 }
@@ -100,11 +102,13 @@ body {
     position: absolute;
     right: -20px;
     bottom: -20px;
-    height: 110%; /* Картинка трохи більша за блок */
+    height: 110%; 
     z-index: 1;
 }
 
-/* Підвал */
+
+
+
 .footer {
     background-color: #ffffff;
     border-top: 1px solid #e0e0e0;
@@ -128,11 +132,10 @@ body {
     }
 
 .copyright {
-    margin-left: auto; /* Відсуваємо вправо */
+    margin-left: auto; 
     color: #999;
 }
 
-/* Адаптивність до 768px (Завдання 5) */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -153,6 +156,9 @@ body {
         text-align: center;
     }
 
+
+
+
     .hero-text {
         max-width: 100%;
     }
@@ -161,7 +167,6 @@ body {
             font-size: 28px;
         }
 
-    /* Робимо картинку напівпрозорою, щоб текст добре читався на мобілці */
     .hero-img {
         opacity: 0.1;
         right: -50px;
