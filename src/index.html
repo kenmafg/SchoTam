@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
     <header class="header">
         <div class="container header-container">
             <a href="#" aria-label="Головна ЩоТам">
@@ -33,20 +35,123 @@
                 <div class="panel">
                     <div class="hero-text">
                         <span class="subtitle">Твій особистий радар</span>
-                        <h1>Дізнавайся про свєту. Плануй свій день чьотінько! </h1>
+                        <h1>Дізнавайся про свєту. Плануй свій день чьотінько!</h1>
                         <p>Сервіс, де люди самі відмічають наявність світла, води та опалення. Реальна ситуація на карті у твоєму місті.</p>
                     </div>
                     
+
                     <div class="hero-image-wrap" aria-hidden="true">
                         <img src="./assets/hero-img.png" alt="" class="hero-img">
                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <form class="search-form">
+                    <div class="search-field-wrap">
+                        <label for="search-input" class="visually-hidden">Пошук оголошень</label>
+                        <input type="search" id="search-input" placeholder="Що ви шукаєте?" class="search-input">
+                    </div>
+
+
+                    <div class="select-field-wrap">
+                        <label for="city-select" class="visually-hidden">Вибір регіону</label>
+                        <select id="city-select" class="city-select">
+                            <option value="all">Вся Україна</option>
+                            <option value="kharkiv">Харків</option>
+                            <option value="kyiv">Київ</option>
+                            <option value="odesa">Житомир</option>
+                            <option value="odesa">Крим</option>
+                            <option value="odesa">Донецьк</option>
+                            <option value="odesa">Львів</option>
+                            <option value="odesa">Мерефа</option>
+                            <option value="odesa">Миколаїв</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn search-btn">Знайти оголошення</button>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="catalog-section">
+            <div class="container">
+                <h2>Якщо нема свєти, але є гроші</h2>
+
+                
+                <div class="catalog-grid">
+                   
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="./assets/ecoflo.jpg" alt="Зарядна станція" class="card-img">
+                            <button type="button" class="fav-btn" aria-label="Додати до обраного">❤️</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>Зарядна станція EcoFlow</h3>
+                            <p class="card-desc">Потужна зарядна станція для мажорів і дому, тримає довго.</p>
+                            <div class="card-info">
+                                <span class="price">80 000 грн</span>
+                                <span class="zsu">10% до ЗСУ</span>
+                            </div>
+                            <span class="time">Сьогодні, 12:40</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="./assets/generator.jpg" alt="Генератор" class="card-img">
+                            <button type="button" class="fav-btn" aria-label="Додати до обраного">❤️</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>Бензиновий генератор</h3>
+                            <p class="card-desc">Робочий стан ідеальний, жужить так шо вікна вилітають.</p>
+                            <div class="card-info">
+                                <span class="price">14 200 грн</span>
+                                <span class="zsu">10% до ЗСУ</span>
+                            </div>
+                            <span class="time">Вчора, 18:10</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="./assets/lampa.jpg" alt="Лампа" class="card-img">
+                            <button type="button" class="fav-btn" aria-label="Додати до обраного">❤️</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>LED лампа на акумуляторі</h3>
+                            <p class="card-desc">Щоб не було грустно какать в темноті.</p>
+                            <div class="card-info">
+                                <span class="price">450 грн</span>
+                                <span class="zsu">10% до ЗСУ</span>
+                            </div>
+                            <span class="time">Сьогодні, 09:15</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="./assets/powerbank.jpg" alt="Павербанк" class="card-img">
+                            <button type="button" class="fav-btn" aria-label="Додати до обраного">❤️</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>Повербанк на 50000 mAh</h3>
+                            <p class="card-desc">Китаець сказав що там 50к міліампер, скільки насправді знає тікі його дід.</p>
+                            <div class="card-info">
+                                <span class="price">2 100 грн</span>
+                                <span class="zsu">10% до ЗСУ</span>
+                            </div>
+                            <span class="time">2 дні тому</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-
-
-
 
     <footer class="footer">
         <div class="container footer-container">
