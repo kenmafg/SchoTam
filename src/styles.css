@@ -1,0 +1,183 @@
+/* Базова підготовка (Завдання 1) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Спільний контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 30px;
+}
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+.actions {
+    margin-left: auto; /* Відсуваємо вправо */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Головний екран (Hero) */
+.hero {
+    padding: 40px 0;
+}
+
+.panel {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ховаємо зайве від картинки */
+    min-height: 400px;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2; /* Текст над картинкою */
+    max-width: 50%;
+    color: #ffffff;
+}
+
+.subtitle {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+.hero-img {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    height: 110%; /* Картинка трохи більша за блок */
+    z-index: 1;
+}
+
+/* Підвал */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-menu {
+    margin-left: 30px;
+}
+
+    .footer-menu a {
+        text-decoration: none;
+        color: #666;
+        margin-right: 15px;
+    }
+
+.copyright {
+    margin-left: auto; /* Відсуваємо вправо */
+    color: #999;
+}
+
+/* Адаптивність до 768px (Завдання 5) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .actions {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .panel {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+        .hero-text h1 {
+            font-size: 28px;
+        }
+
+    /* Робимо картинку напівпрозорою, щоб текст добре читався на мобілці */
+    .hero-img {
+        opacity: 0.1;
+        right: -50px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-menu {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+}
